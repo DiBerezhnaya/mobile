@@ -5,7 +5,9 @@ public class Main {
         int amount = 1500;
         int bonus = amount / 100;
 
-        if (amount < 1000) bonus = 0;
+        if (amount < 1000) {
+            bonus = 0;
+        }
 
         int total = initialBalance + amount + bonus;
         System.out.println(total);
